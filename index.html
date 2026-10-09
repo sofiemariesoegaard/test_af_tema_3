@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+    <title>Sofie Marie Studios | Forside</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <ul class="menu">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="symoenstre.html">Symønstre</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="tips_og_tricks.html">Tips og tricks</a></li>
+                </ul>
+
+                <div>
+                    <a href="index.html"> <img class="logo" src="./imgs/sofiemariestudios.png"
+                            alt="Sofie Marie Studios Logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="grid_1-1">
+            <div class="hero_gallery">
+                <img class="img_left imgs" src="./imgs/landing_page/image_1.webp" alt="Syede punge">
+                <img class="img_right imgs" src="./imgs/landing_page/image_2.webp" alt="Syudstyr og stof">
+                <img class="img_bottom imgs" src="./imgs/landing_page/image_3.webp" alt="Syed taske">
+            </div>
+            <div class="title">
+                <h1 class="title">Shop hjemmelavede varer og symønstre</h1>
+            </div>
+            <div class="grid_1-1-1">
+                <a class="button" href="shop.html">Shop</a>
+                <a class="button_outline" href="symoenstre.html">Symønstre</a>
+            </div>
+        </div>
+        <h2>Populære produktkategorier</h2>
+        <div class="grid_1-2">
+            <div class="category_card">
+                <img class="imgs" src="./imgs/landing_page/toilettaske.webp" alt="Billede af toilettaske">
+                <p class="button_categories">Toilettasker</p>
+            </div>
+            <div class="category_card">
+                <img class="imgs" src="./imgs/landing_page/computer.webp" alt="Billede af computersleeve">
+                <p class="button_categories">Computersleeve</p>
+            </div>
+            <div class="category_card">
+                <img class="imgs" src="./imgs/landing_page/noegleringe.webp" alt="Billede af nøgleringe">
+                <p class="button_categories">Nøgleringe</p>
+            </div>
+        </div>
+        <div class="info_wrapper">
+            <div class="info_row">
+                <img class="imgs" src="./imgs/landing_page/stock_image_1.webp" alt="Klipning af symønster">
+                <div class="info_text">
+                    <h3>Find symønsteret til dit næste projekt</h3>
+                    <p>På hjemmesiden finder du bl.a. symønstre og vejledninger til mange forskellige syprojekter. Her
+                        kan du
+                        finde inspiration, lære nye teknikker og få praktiske tips til materialer, tilpasning og finish.
+                        Uanset
+                        om du er nybegynder eller erfaren, får du hjælp til at komme godt i gang med dit næste kreative
+                        projekt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info_row reverse">
+                <img class="imgs" src="./imgs/landing_page/stock_image_2.webp" alt="Trådruller og syudstyr">
+                <div class="info_text">
+                    <h3>Fra idé til færdigt syprojekt</h3>
+                    <p>Gå på opdagelse i et kreativt univers, hvor der er plads til både enkle idéer og mere udfordrende
+                        projekter. Vejledningerne guider dig gennem processen, så du nemt kan følge med fra start til
+                        slut.
+                        Målet er at gøre det overskueligt og inspirerende at skabe noget personligt med nål, tråd og
+                        stof.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Sofie Marie Studios @ 2026. All rights reserved</p>
+            <p>Find os på</p>
+            <div class="grid_1-icons">
+                <img src="./imgs/icon/jam-icons/logos/youtube.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/facebook.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/twitter.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/instagram.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/linkedin.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", burgerClick);
+        function burgerClick() {
+            burger.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

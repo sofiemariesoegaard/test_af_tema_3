@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+    <title>Sofie Marie Studios | Symønstre</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <button class="burger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <ul class="menu">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="symoenstre.html">Symønstre</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="tips_og_tricks.html">Tips og tricks</a></li>
+                </ul>
+
+                <div>
+                    <a href="index.html"> <img class="logo" src="./imgs/sofiemariestudios.png"
+                            alt="Sofie Marie Studios Logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="grid_2-1">
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_1.webp" alt="Symønster af toilettaskte">
+                <a class="button_outline_cards" href="#">Lille toilettaske</a>
+                <p>Begyndervenligt syprojekt, som du faktisk får brugt</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_2.webp" alt="Symønster af computersleeve">
+                <a href="#" class="button_outline_cards">Computersleeve</a>
+                <p>Syprojekt til den lettere øvede syerske</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_3.webp" alt="Symønster af nøglering">
+                <a href="#" class="button_outline_cards">Nøglering</a>
+                <p>Simpelt og enkelt syprojekt til personliggørelse af dit nøglesæt</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_4.webp" alt="Symønster af skjorte">
+                <a href="#" class="button_outline_cards">Skjorte</a>
+                <p>Højere sværhedsgrad for syersken der leder efter en udfordring</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_5.webp" alt="Symønster af shorts">
+                <a href="#" class="button_outline_cards">Shorts</a>
+                <p>Nemt syprojekt til et par behagelige sommerhorts</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_6.webp" alt="Symønster af bogsleeve">
+                <a href="#" class="button_outline_cards">Bogsleeve</a>
+                <p>En gave til bogormen, der læser på farten</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_7.webp" alt="Symønster af stofkurv">
+                <a href="#" class="button_outline_cards">Stofkurv</a>
+                <p>Praktisk kurv til småopbevaring</p>
+            </div>
+            <div class="card">
+                <img class="imgs" src="./imgs/patterns/pattern_8.webp" alt="Symønster af bogmærke">
+                <a href="#" class="button_outline_cards">Bogmærke</a>
+                <p>Lille ekstra gave til bogormen</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Sofie Marie Studios @ 2026. All rights reserved</p>
+            <p>Find os på</p>
+            <div class="grid_1-icons">
+                <img src="./imgs/icon/jam-icons/logos/youtube.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/facebook.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/twitter.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/instagram.png" alt="">
+                <img src="./imgs/icon/jam-icons/logos/linkedin.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector("nav");
+
+        burger.addEventListener("click", burgerClick);
+        function burgerClick() {
+            burger.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
